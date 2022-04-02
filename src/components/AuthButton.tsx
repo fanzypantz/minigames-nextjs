@@ -96,6 +96,8 @@ const UsernameForm = () => {
       <form onSubmit={onSubmit}>
         <input name="username" placeholder="username" value={formValue} onChange={onChange} />
 
+        <UsernameMessage username={formValue} isValid={isValid} loading={loading} />
+
         <button type="submit" disabled={!isValid}>
           Choose
         </button>
@@ -103,6 +105,8 @@ const UsernameForm = () => {
         <h3>Debug State</h3>
         <div>
           Username: {formValue}
+          <br />
+          Loading: {loading.toString()}
           <br />
           Username Valid: {isValid.toString()}
         </div>
@@ -112,5 +116,17 @@ const UsernameForm = () => {
     <></>
   );
 };
+
+function UsernameMessage({ username, isValid, loading }: { username: string; isValid: boolean; loading: boolean }) {
+  if (loading) {
+    return <p>Checking...</p>;
+  } else if (isValid) {
+    return <p className="text-success">{username} is available!</p>;
+  } else if (username && !isValid) {
+    return <p className="text-danger">That username is taken!</p>;
+  } else {
+    return <p></p>;
+  }
+}
 
 export default AuthButton;
