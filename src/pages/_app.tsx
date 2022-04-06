@@ -7,9 +7,7 @@ import Navbar from "../components/Navbar";
 import { UserContext } from "../lib/context";
 import { useUserData } from "../lib/hooks";
 
-let socket;
-
-function MingameApp({ Component, pageProps }: AppProps) {
+function MinGameApp({ Component, pageProps }: AppProps) {
   const userData = useUserData();
 
   return (
@@ -21,4 +19,4 @@ function MingameApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MingameApp;
+export default MinGameApp;

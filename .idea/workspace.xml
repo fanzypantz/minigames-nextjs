@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4f125bd-1e6d-4d4a-90ce-10ccc5e9d458" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/AuthButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthButton.tsx" afterDir="false" />
+    <list default="true" id="efa600bd-e6c3-426b-ac8e-3fbd7ad74711" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/minigames.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Lobbies.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UserProfile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.devcontainer/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.devcontainer/devcontainer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Lobby.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Lobby.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/[username]/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/[username]/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,10 +36,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="27FV5Z3GIneg0ii2doU352XpFfW" />
+  <component name="ProjectId" id="27G1JD0BroJV7itmvN11IF5fhLE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectStartupLocalConfiguration">
+    <configurations>
+      <configuration id="npm.dev" name="dev" />
+    </configurations>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,27 +64,53 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/constants/interfaces.ts" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\WindowsFolders\Desktop\Programming\Javascript\minigames\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
+    <property name="ts.external.directory.path" value="D:\WindowsFolders\Desktop\Programming\Javascript\minigames\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WindowsFolders\Desktop\Programming\Javascript\minigames\src\lib" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="D:\WindowsFolders\Desktop\Programming\Javascript\minigames\src\constants\interfaces.ts" />
+      <recent name="D:\WindowsFolders\Desktop\Programming\Javascript\minigames\src\components\Board.tsx" />
+      <recent name="D:\WindowsFolders\Desktop\Programming\Javascript\minigames\src\lib\hooks.ts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e4f125bd-1e6d-4d4a-90ce-10ccc5e9d458" name="Changes" comment="" />
-      <created>1648915639997</created>
+      <changelist id="efa600bd-e6c3-426b-ac8e-3fbd7ad74711" name="Changes" comment="" />
+      <created>1648931536191</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648915639997</updated>
-      <workItem from="1648915643432" duration="487000" />
-      <workItem from="1648916251332" duration="7000" />
-      <workItem from="1648916921653" duration="766000" />
+      <updated>1648931536191</updated>
+      <workItem from="1648931538514" duration="287000" />
+      <workItem from="1648931835108" duration="1506000" />
+      <workItem from="1648986507694" duration="5995000" />
     </task>
     <servers />
   </component>
