@@ -1,11 +1,9 @@
-import styles from '../styles/Home.module.css'
+import styles from "../styles/Home.module.css";
 
 const Board = () => {
-  return (
-    <div className={styles.container}>
+  const potato = "";
 
-    </div>
-  )
-}
+  return <div className={styles.container}></div>;
+};
 
-export default Board
+export default Board;
