@@ -1,4 +1,4 @@
-import { FireBaseTimeStamp } from "../lib/firebase";
+import type { User, Profile } from "@prisma/client";
 
 export interface UserInterface {
   uid: string;
@@ -10,8 +10,8 @@ export interface UserInterface {
 export interface LobbyInterface {
   name: string;
   password: string;
-  createdAt: number | typeof FireBaseTimeStamp;
-  updatedAt: number | typeof FireBaseTimeStamp;
+  createdAt: number;
+  updatedAt: number;
 }
 
 export interface HomeProps {
@@ -20,5 +20,6 @@ export interface HomeProps {
 
 export interface UserPageProps {
   lobby: LobbyInterface;
-  user: UserInterface;
+  user: User;
+  userProfile: Profile;
 }

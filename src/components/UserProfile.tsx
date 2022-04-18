@@ -1,14 +1,17 @@
-import styles from "../styles/Home.module.css";
-import { UserInterface } from "../constants/interfaces";
+import styles from "@styles/Home.module.css";
+import UserNameForm from "@components/UserNameForm";
+import type { User } from "@prisma/client";
 
-const UserProfile = ({ user }: { user: UserInterface }) => {
+const UserProfile = ({ user }: { user: User }) => {
   return (
     <div className={styles.container}>
-      <img src={user.photoURL} alt="" />
+      <UserNameForm />
+
+      <img src={user.image} alt="" />
       <p>
+        <i>@{user.name}</i>
         <i>@{user.username}</i>
       </p>
-      <h1>{user.displayName}</h1>
     </div>
   );
 };

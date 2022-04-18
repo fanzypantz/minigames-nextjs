@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
+import styles from "@styles/Home.module.css";
 
 interface AdminPageProps {
   lobby: {
@@ -13,3 +13,5 @@ const AdminPage: NextPage<AdminPageProps> = (props) => {
 
   return <div className={styles.container}></div>;
 };
+
+export default AdminPage;

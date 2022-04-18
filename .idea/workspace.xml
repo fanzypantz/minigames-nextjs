@@ -5,21 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efa600bd-e6c3-426b-ac8e-3fbd7ad74711" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418115911_nextauth/migration.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/auth/[...nextauth].ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418130339_username/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418140212_userprofile/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418142457_username/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418143809_user_email_profile/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UserNameForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/enums.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/api/user/update/username.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/user/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/userUtils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AuthButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Lobbies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Lobbies.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Lobby.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Lobby.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/context.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/firebase.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/hooks.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserProfile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/[username]/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/[username]/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,16 +53,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "prettierjs.PrettierConfiguration.Package": "/Users/andreas/Documents/Programming/JavaScript/minigames-nextjs/node_modules/prettier",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/andreas/Documents/Programming/JavaScript/minigames-nextjs/node_modules/typescript/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/andreas/Documents/Programming/JavaScript/minigames-nextjs/node_modules/prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/andreas/Documents/Programming/JavaScript/minigames-nextjs/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WindowsFolders\Desktop\Programming\Javascript\minigames\src\lib" />
@@ -93,6 +102,9 @@
       <workItem from="1648931835108" duration="1506000" />
       <workItem from="1648986507694" duration="5995000" />
       <workItem from="1649588902350" duration="2649000" />
+      <workItem from="1650286529281" duration="707000" />
+      <workItem from="1650287255859" duration="5542000" />
+      <workItem from="1650292823389" duration="673000" />
     </task>
     <servers />
   </component>

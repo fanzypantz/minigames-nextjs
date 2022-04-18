@@ -19,7 +19,7 @@ export default function Navbar() {
         {session?.user && (
           <>
             <li className="push-left">
-              <Link href="/admin">
+              <Link href="/user">
                 <button className="btn-blue">Profile</button>
               </Link>
             </li>
