@@ -9,6 +9,7 @@ const Lobby = ({ lobby }: { lobby: LobbyInterface }) => {
     e.preventDefault();
 
     if (password === lobby.password) {
+      return;
     }
   };
 

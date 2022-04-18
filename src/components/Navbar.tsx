@@ -1,48 +1,46 @@
 import Link from "next/link";
-import { useContext } from "react";
-import { UserContext } from "../lib/context";
-import AuthButton from "./AuthButton";
+
+import { useSession, signIn, signOut } from "next-auth/react";
 
 // Top navbar
 export default function Navbar() {
-  const { user, username } = useContext(UserContext);
+  const { data: session } = useSession();
 
   return (
     <nav className="navbar">
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-logo">FEED</button>
+            <button className="btn-logo">Home</button>
           </Link>
         </li>
 
         {/* user is signed-in and has username */}
-        {username && (
+        {session?.user && (
           <>
             <li className="push-left">
               <Link href="/admin">
-                <button className="btn-blue">Write Posts</button>
+                <button className="btn-blue">Profile</button>
               </Link>
             </li>
             <li>
-              <Link href={`/${username}`}>
-                <img src={user?.photoURL} />
+              <Link href={`/${session.user.name}`}>
+                {session.user.image && <img src={session.user.image} />}
               </Link>
+            </li>
+            <li>
+              <button onClick={() => signOut()}>Sign out</button>
             </li>
           </>
         )}
 
         {/* user is not signed OR has not created username */}
-        {!username && (
+        {!session && (
           <li>
-            <Link href="/enter">
-              <button className="btn-blue">Log in</button>
-            </Link>
+            <button onClick={() => signIn()}>Sign in</button>
           </li>
         )}
       </ul>
-
-      <AuthButton />
     </nav>
   );
 }

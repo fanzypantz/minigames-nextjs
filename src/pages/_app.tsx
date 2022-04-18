@@ -1,21 +1,20 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import { SessionProvider } from "next-auth/react";
 
 import { Toaster } from "react-hot-toast";
-
 import Navbar from "../components/Navbar";
-import { UserContext } from "../lib/context";
-import { useUserData } from "../lib/hooks";
 
-function MinGameApp({ Component, pageProps }: AppProps) {
-  const userData = useUserData();
-
+function MinGameApp({
+  Component,
+  pageProps: { session, ...pageProps },
+}: AppProps) {
   return (
-    <UserContext.Provider value={userData}>
+    <SessionProvider session={session}>
       <Navbar />
       <Component {...pageProps} />
       <Toaster />
-    </UserContext.Provider>
+    </SessionProvider>
   );
 }
 
