@@ -33,8 +33,6 @@ const Home: NextPage<HomeProps> = (props: HomeProps) => {
       (doc) => doc.data() as LobbyInterface
     );
 
-    console.log("newLobbies : ", newLobbies);
-
     setLobbies(lobbies.concat(newLobbies));
     setLoading(false);
 

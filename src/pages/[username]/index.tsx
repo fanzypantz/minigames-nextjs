@@ -13,7 +13,11 @@ const UserPage: NextPage<UserPageProps> = ({ user }) => {
   );
 };
 
-export async function getServerSideProps({ query }: { query: { username: string } }) {
+export async function getServerSideProps({
+  query,
+}: {
+  query: { username: string };
+}) {
   const { username } = query;
 
   const userDoc = await getUserWithUsername(username);
