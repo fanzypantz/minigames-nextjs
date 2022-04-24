@@ -1,9 +1,12 @@
 import Link from "next/link";
 
 import { useSession, signIn, signOut } from "next-auth/react";
+import { useContext } from "react";
+import { ProfileContext } from "@lib/profileContext";
 
 // Top navbar
 export default function Navbar() {
+  const { profile } = useContext(ProfileContext);
   const { data: session } = useSession();
 
   return (
@@ -20,7 +23,9 @@ export default function Navbar() {
           <>
             <li className="push-left">
               <Link href="/user">
-                <button className="btn-blue">Profile</button>
+                <button className="btn-blue">
+                  {profile?.username || "Profile"}
+                </button>
               </Link>
             </li>
             <li>

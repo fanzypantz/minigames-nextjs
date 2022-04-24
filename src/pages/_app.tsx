@@ -4,6 +4,7 @@ import { SessionProvider } from "next-auth/react";
 
 import { Toaster } from "react-hot-toast";
 import Navbar from "../components/Navbar";
+import { ProfileProvider } from "@lib/profileContext";
 
 function MinGameApp({
   Component,
@@ -11,9 +12,13 @@ function MinGameApp({
 }: AppProps) {
   return (
     <SessionProvider session={session}>
-      <Navbar />
-      <Component {...pageProps} />
-      <Toaster />
+      <ProfileProvider>
+        <>
+          <Navbar />
+          <Component {...pageProps} />
+          <Toaster />
+        </>
+      </ProfileProvider>
     </SessionProvider>
   );
 }

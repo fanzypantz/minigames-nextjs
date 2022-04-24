@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useSession } from "next-auth/react";
 import axios from "axios";
+import { ProfileContext } from "@lib/profileContext";
 
 const UserNameForm = () => {
+  const { profile, setProfile } = useContext(ProfileContext);
   const { data: session } = useSession();
   const [username, setUsername] = useState("");
 
@@ -16,7 +18,8 @@ const UserNameForm = () => {
       const result = await axios.post("/api/user/update/username", {
         username,
       });
-      console.log("new User : ", result.data);
+      setProfile(result.data);
+      setUsername("");
     } catch (err) {
       // @ts-ignore
       console.log(err.response.data);
@@ -33,7 +36,12 @@ const UserNameForm = () => {
     <form onSubmit={handleSubmit}>
       <label>
         Username:
-        <input type="text" name="username" onChange={(e) => handleChange(e)} />
+        <input
+          type="text"
+          name="username"
+          value={username}
+          onChange={(e) => handleChange(e)}
+        />
       </label>
       <br />
       <button type="submit">Change</button>

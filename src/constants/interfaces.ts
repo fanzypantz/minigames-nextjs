@@ -21,5 +21,5 @@ export interface HomeProps {
 export interface UserPageProps {
   lobby: LobbyInterface;
   user: User;
-  userProfile: Profile;
+  profile: Profile;
 }

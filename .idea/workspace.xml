@@ -5,26 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efa600bd-e6c3-426b-ac8e-3fbd7ad74711" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418130339_username/migration.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418140212_userprofile/migration.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418142457_username/migration.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220418143809_user_email_profile/migration.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UserNameForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/enums.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/user/update/username.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/user/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/userUtils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/profileContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/api/user/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserNameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserNameForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UserProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserProfile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/[username]/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/[username]/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +93,9 @@
       <workItem from="1649588902350" duration="2649000" />
       <workItem from="1650286529281" duration="707000" />
       <workItem from="1650287255859" duration="5542000" />
-      <workItem from="1650292823389" duration="673000" />
+      <workItem from="1650292823389" duration="1108000" />
+      <workItem from="1650352247336" duration="232000" />
+      <workItem from="1650803778762" duration="3015000" />
     </task>
     <servers />
   </component>

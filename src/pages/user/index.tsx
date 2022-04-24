@@ -9,16 +9,12 @@ import { redirectUser } from "@utils/userUtils";
 import UserProfile from "@components/UserProfile";
 import prisma from "@lib/client";
 
-const UserPage: NextPage<UserPageProps> = ({ user, userProfile }) => {
+const UserPage: NextPage<UserPageProps> = ({ user, profile }) => {
   const { data: session } = useSession();
-
-  console.log("user : ", user);
-  console.log("user Profile : ", userProfile);
 
   return (
     <main className={styles.container}>
-      <h1>User Profile</h1>
-      {session && <UserProfile user={session.user} />}
+      {session && <UserProfile user={session.user} profile={profile} />}
     </main>
   );
 };
@@ -36,7 +32,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     },
   });
 
-  const userProfile = await prisma.profile.findFirst({
+  const profile = await prisma.profile.findFirst({
     where: {
       userEmail: user?.email || undefined,
     },
@@ -45,7 +41,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       user,
-      userProfile,
+      profile,
     },
   };
 };
