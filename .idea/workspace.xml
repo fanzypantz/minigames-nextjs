@@ -5,15 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efa600bd-e6c3-426b-ac8e-3fbd7ad74711" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/profileContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/user/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220425174538_chat_message/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220425182222_time_stamp/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20220425182303_time_stamp/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Lobbies/LobbyCreator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/prisma.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/api/lobbies/create.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/api/lobbies/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserNameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserNameForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserProfile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/Board.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BoardSquare.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/BoardSquare.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chess.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/Chess.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Lobbies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Lobbies/Lobbies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Lobby.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Lobbies/Lobby.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LobbyMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Lobbies/LobbyMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Piece.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/Piece.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserNameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/UserNameForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/UserProfile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/api/hello.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/user/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +74,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Game" />
+      <recent name="$PROJECT_DIR$/src/components/Lobbies" />
+      <recent name="$PROJECT_DIR$/src/components/User" />
       <recent name="D:\WindowsFolders\Desktop\Programming\Javascript\minigames\src\lib" />
     </key>
     <key name="es6.move.members.recent.items">
@@ -95,7 +113,9 @@
       <workItem from="1650287255859" duration="5542000" />
       <workItem from="1650292823389" duration="1108000" />
       <workItem from="1650352247336" duration="232000" />
-      <workItem from="1650803778762" duration="3015000" />
+      <workItem from="1650803778762" duration="3664000" />
+      <workItem from="1650877368694" duration="37000" />
+      <workItem from="1650908376531" duration="3629000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,5 @@
-import styles from "../styles/Home.module.css";
-import { LobbyInterface } from "../constants/interfaces";
+import styles from "@styles/Home.module.css";
+import { LobbyInterface } from "@constants/interfaces";
 import Lobby from "./Lobby";
 
 const Lobbies = ({ lobbies }: { lobbies: LobbyInterface[] }) => {

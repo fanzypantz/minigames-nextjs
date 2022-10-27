@@ -4,7 +4,7 @@ import axios from "axios";
 import { ProfileContext } from "@lib/profileContext";
 
 const UserNameForm = () => {
-  const { profile, setProfile } = useContext(ProfileContext);
+  const { setProfile } = useContext(ProfileContext);
   const { data: session } = useSession();
   const [username, setUsername] = useState("");
 

@@ -6,17 +6,13 @@ import { UserPageProps } from "@constants/interfaces";
 import { RedirectOptions } from "@constants/enums";
 import { redirectUser } from "@utils/userUtils";
 
-import UserProfile from "@components/UserProfile";
+import UserProfile from "@components/User/UserProfile";
 import prisma from "@lib/client";
 
 const UserPage: NextPage<UserPageProps> = ({ user, profile }) => {
   const { data: session } = useSession();
 
-  return (
-    <main className={styles.container}>
-      {session && <UserProfile user={session.user} profile={profile} />}
-    </main>
-  );
+  return <main className={styles.container}>{session && <UserProfile user={session.user} profile={profile} />}</main>;
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {

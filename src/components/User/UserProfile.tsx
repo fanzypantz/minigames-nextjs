@@ -1,5 +1,5 @@
 import styles from "@styles/Home.module.css";
-import UserNameForm from "@components/UserNameForm";
+import UserNameForm from "@components/User/UserNameForm";
 import type { User } from "@prisma/client";
 import { useContext } from "react";
 import { ProfileContext } from "@lib/profileContext";

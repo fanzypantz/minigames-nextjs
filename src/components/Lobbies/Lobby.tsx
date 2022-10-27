@@ -1,5 +1,5 @@
-import styles from "../styles/Home.module.css";
-import { LobbyInterface } from "../constants/interfaces";
+import styles from "@styles/Home.module.css";
+import { LobbyInterface } from "@constants/interfaces";
 import React, { useState } from "react";
 
 const Lobby = ({ lobby }: { lobby: LobbyInterface }) => {
@@ -23,11 +23,7 @@ const Lobby = ({ lobby }: { lobby: LobbyInterface }) => {
     <div className={styles.container}>
       <h1>{lobby.name}</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          type="password"
-          name="password"
-          onChange={(e) => handleChange(e)}
-        />
+        <input type="password" name="password" onChange={(e) => handleChange(e)} />
         <button type="submit">Join</button>
       </form>
     </div>
